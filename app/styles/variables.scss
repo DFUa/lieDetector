@@ -1,0 +1,21 @@
+/* fonts */
+$primary-font: "SegoeUI";
+$secondary-font: "PlayfairDisplay";
+
+//colors
+$grey: #BBB;
+$darkgrey: #5E6377;
+$light-grey: #F5F5F5;
+$border-grey: #E9E9E9;
+$yellow: #F0BD23;
+$white: #fff;
+$black: #000;
+$dark-blue: #121937;
+
+//bootstrap
+$custom-control-indicator-checked-color: $yellow;
+$input-btn-yellow-focus-box-shadow: 0 0 0 0.2rem rgba($yellow, .25);
+$container-max-widths: ( sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1200px) !default;

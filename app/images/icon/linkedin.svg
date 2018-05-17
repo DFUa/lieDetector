@@ -1,0 +1,17 @@
+<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g transform="translate(0 5)">
+    <g>
+      <rect width="3.578" height="11"/>
+    </g>
+  </g>
+  <g transform="translate(5 5)">
+    <g>
+      <path d="M168.324,160.129c-.038-.012-.074-.025-.114-.036s-.1-.02-.145-.028a3.207,3.207,0,0,0-.642-.065,4.971,4.971,0,0,0-3.845,2.1V160H160v11h3.578v-6s2.7-3.766,3.845-1v7H171v-7.423A3.568,3.568,0,0,0,168.324,160.129Z" transform="translate(-160 -160)"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <circle cx="1.75" cy="1.75" r="1.75"/>
+    </g>
+  </g>
+</svg>
