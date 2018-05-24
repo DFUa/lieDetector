@@ -1,4 +1,4 @@
-/* fonts */
+// fonts
 $primary-font: "SegoeUI";
 $secondary-font: "PlayfairDisplay";
 
@@ -11,6 +11,7 @@ $yellow: #F0BD23;
 $white: #fff;
 $black: #000;
 $dark-blue: #121937;
+$header-bg: #20212B;
 
 //bootstrap
 $custom-control-indicator-checked-color: $yellow;
@@ -19,3 +20,10 @@ $container-max-widths: ( sm: 540px,
 md: 720px,
 lg: 960px,
 xl: 1200px) !default;
+
+//variables
+@each $icon in request, customer-service, car, calendar, pulse, charts{
+	.icon.icon-#{$icon}{
+		background: transparent url(../images/icon/#{$icon}.svg) center center no-repeat;
+	}
+}
