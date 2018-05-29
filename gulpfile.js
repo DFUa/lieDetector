@@ -93,7 +93,7 @@ gulp.task('extras', () => {
   }).pipe(gulp.dest('dist'));
 });
 
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean', del.bind(null, ['.tmp', 'dist', 'concat']));
 
 gulp.task('serve', () => {
   runSequence(['clean', 'wiredep'], ['styles', 'scripts', 'fonts'], () => {
@@ -162,25 +162,8 @@ gulp.task('concatcss', () => {
     .pipe(gulp.dest('concat'));
 });
 
-gulp.task('concat', ['default', 'concatjs', 'concatcss'], () => {
-  browserSync.init({
-    notify: false,
-    port: 9001,
-    server: {
-      baseDir: ['dist']
-    }
-  });
-
-  gulp.watch([
-    'app/*.html',
-    'app/images/**/*',
-    '.tmp/fonts/**/*'
-  ]).on('change', reload);
-  
-  gulp.watch('app/styles/**/*.scss', ['styles']);
-  gulp.watch('app/scripts/**/*.js', ['scripts']);
-  gulp.watch('app/fonts/**/*', ['fonts']);
-  gulp.watch('bower.json', ['wiredep', 'fonts']);
+gulp.task('concat', ['default'], () =>{
+  runSequence(['concatcss', 'concatjs']);
 });
 
 // inject bower components
